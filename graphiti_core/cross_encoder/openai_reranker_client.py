@@ -28,7 +28,12 @@ from .client import CrossEncoderClient
 
 logger = logging.getLogger(__name__)
 
-DEFAULT_MODEL = 'gpt-4.1-nano'
+DEFAULT_MODEL = 'gpt-4.1-mini'
+
+
+class BooleanClassifier(BaseModel):
+    isTrue: bool
+
 
 
 class OpenAIRerankerClient(CrossEncoderClient):
